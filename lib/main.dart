@@ -46,13 +46,13 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
-        title: Center(
-          child: Text(
-            "Zavod-IT",
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-            ),
+        iconTheme: IconThemeData(color: Colors.white,),
+        title: Text(
+          "Zavod-IT",
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            fontFamily: "BlackOpsOne"
           ),
         ),
       ),
@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage> {
       } else if(id == 3) {
         currentPage = DrawerItems.support;
       } else if(id == 4) {
-        currentPage == DrawerItems.history;
+        currentPage = DrawerItems.history;
       }
     });
   }
